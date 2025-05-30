@@ -1,0 +1,57 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?0f96089a906e03080322696a66538164") format("truetype"),
+url("./flaticon.woff?0f96089a906e03080322696a66538164") format("woff"),
+url("./flaticon.woff2?0f96089a906e03080322696a66538164") format("woff2"),
+url("./flaticon.eot?0f96089a906e03080322696a66538164#iefix") format("embedded-opentype"),
+url("./flaticon.svg?0f96089a906e03080322696a66538164#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "confetti": "\f101",
+    "rocket": "\f102",
+    "idea": "\f103",
+    "startup": "\f104",
+    "smile": "\f105",
+    "monitor": "\f106",
+    "line-graph": "\f107",
+    "quotation": "\f108",
+);
+
+.flaticon-confetti:before {
+    content: map-get($flaticon-map, "confetti");
+}
+.flaticon-rocket:before {
+    content: map-get($flaticon-map, "rocket");
+}
+.flaticon-idea:before {
+    content: map-get($flaticon-map, "idea");
+}
+.flaticon-startup:before {
+    content: map-get($flaticon-map, "startup");
+}
+.flaticon-smile:before {
+    content: map-get($flaticon-map, "smile");
+}
+.flaticon-monitor:before {
+    content: map-get($flaticon-map, "monitor");
+}
+.flaticon-line-graph:before {
+    content: map-get($flaticon-map, "line-graph");
+}
+.flaticon-quotation:before {
+    content: map-get($flaticon-map, "quotation");
+}
